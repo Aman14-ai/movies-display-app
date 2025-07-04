@@ -5,6 +5,7 @@ import Loader from './utils/Loader'
 import MovieCard from './components/MovieCard'
 import { useDebounce } from 'use-debounce'
 import { getTrendingMovies, updateSearchCount } from './appwrite'
+import AnimatedNameLogo from './utils/logo'
 
 
 
@@ -96,6 +97,7 @@ const App = () => {
 
       <div className="wrapper">
         <header>
+          <AnimatedNameLogo />
           <img src="./hero.png" alt="hero-banner" />
           <h1>Find <span className='bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent'>movies</span> you'll enjoy without the hassle</h1>
           <Search searchMovie={searchMovie} setSearchMovie={setSearchMovie} />
